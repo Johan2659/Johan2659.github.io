@@ -1,0 +1,58 @@
+html{
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+    margin: 0;
+  }
+#main-background {
+    height: 100vh;
+    background-image:url(img/Lux-city.jpg);
+    background-size: cover;
+    background-position: top;  
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+}
+
+nav li {
+    margin-top: 15px;
+    padding-left: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+#container-title {
+    border-bottom: solid;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightgray;
+    text-align: center;
+}
+
+#main-title {
+    width: 30%;
+}
+
+
+#container-about {
+    display: flex;
+}
+
+.test {
+    padding: 30px;
+    border-bottom: solid;
+}
+
+
+
