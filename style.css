@@ -4,6 +4,7 @@ html{
   body {
     min-height: 100%;
     margin: 0;
+    color: #646C79;
   }
 #main-background {
     height: 100vh;
@@ -12,26 +13,16 @@ html{
     background-position: top;  
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-start;
-}
-
-nav li {
-    margin-top: 15px;
-    padding-left: 50px;
-}
-
 nav a {
     text-decoration: none;
     color: lightgrey;
 }
+nav a:hover {
+    background-color: transparent;
+    color: #999999;
+  }
 
 #container-title {
-    border-bottom: solid;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -47,12 +38,122 @@ nav a {
 
 #container-about {
     display: flex;
+    background-color: lightgray;
 }
 
 .test {
     padding: 30px;
-    border-bottom: solid;
+}
+
+#container-aboutMe {
+    margin: 30px;
+    padding: 30px;
+    border-left: solid 0.1px whitesmoke;
+    text-align: left;
 }
 
 
+/********** section 1 **************/
 
+.section-who {
+    padding: 20vmin 0vmin;
+    background-color: #282f40;
+}
+
+#section-who {
+    height: 100vh;
+    background-image:url(img/Lux-city.jpg);
+    background-size: cover;
+    background-position: top;  
+}
+
+
+.section-who .row .col-md-6 .pray img {
+    opacity: 0.8;
+    width: 70%;
+    border-radius: 0.2em;
+}
+
+.section-who .row .col-md-6:last-child {
+    position: relative;
+}
+
+.section-who .row .col-md-6 .panel {
+    position: absolute;
+    top: -10vmin;
+    left: -15vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 8vmin 5vmin 10vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Rubik);
+    z-index: 1;
+}
+
+.section-who .row .col-md-6 .panel h1 {
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+}
+
+.section-who .row .col-md-6 .panel p {
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* 
+SECTION WHAT I DO  */
+
+.sections-tittles {
+    padding-top: 20px;
+    text-align: center;
+}
+.section-what .container {
+    margin-top: 50px;
+}
+
+.section-what .test3 {
+    display: inline;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+}
+
+.section-what .test3 p {
+    text-align: left;
+}
+
+.section-what .test3 h3 {
+    margin-bottom: 30px;
+}
+
+/* ICONS & TITLES*/
+
+h1 {
+font-size: 4em;
+}
+
+h2 {
+    font-size: 1.6em;
+    }
+
+.fa-laptop-code, .fa-cogs {
+    color: #646C79;
+    -webkit-text-stroke: 5px white;
+}
+
+.fa-headset {
+    color: #646C79;
+    -webkit-text-stroke: 4px white;
+}
+
+.sections-tittles:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 7%; /* Change this to whatever width you want. */
+    padding-top: 40px; /* This creates some space between the element and the border. */
+    border-bottom: thin solid #646C79; /* This creates the border. Replace black with whatever color you want. */
+}

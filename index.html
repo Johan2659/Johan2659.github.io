@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
@@ -11,76 +17,127 @@
 <body>
     <section id="main-background">
         <header>
-
             <nav>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Qui suis-je ?</a></li>
-                    <li><a href="#">Projets</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="nav justify-content-left">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Qui suis-je ?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
                 </ul>
             </nav>
 
             <div id="container-title">
                 <div id="main-title">
-                    <h1>Salut, moi c'est JOHAN</h1>
-                    <h2>Je suis Développeur Web</h2>
+                    <h1>Hello, I'M JOHAN</h1>
+                    <h2>AN AMBITIOUS DEVELOPER</h2>
                 </div>
             </div>
         </header>
     </section>
 
-    <section>
-        <div id="container-about">
-            <div class="test">
-                <img src="img/Photo-Toso-Johan.jpg" alt="">
-            </div>
-            <div>
-                <h3>HI THERE</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi suscipit fuga cumque id alias
-                    quibusdam
-                    veniam, amet consequatur eligendi. Ducimus voluptates officiis molestias veritatis fugit rem
-                    obcaecati
-                    voluptate? Magnam, illum.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quod esse unde autem veritatis
-                    quas!
-                </p>
+    <section class="section-who">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="pray">
+                        <img src="img/chairs-black.jpg" alt="Pray" class="" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="panel text-left">
+                        <h1>Hello, moi c'est Johan !</h1>
+                        <p class="pt-4">
+                            Après plusieurs expériences dans l'IT (Support / Business / Développement Web), je suis à la
+                            recherche d'un nouveau défi dans un environnement dynamique en tant que Développeur
+                            front-end.
+                        </p>
+                        <p>
+                            Ma vision transversale ainsi que mon expertise technique me permettent aujourd'hui de
+                            participer, de
+                            m'adapter et de monter en compétence avec agilité sur tous types d'environnements et de
+                            projets,
+                            mais aussi de pouvoir conseiller au mieux mon interlocuteur pour comprendre, développer et
+                            participer à la résolution d'incidents, ainsi qu'être force de proposition concernant
+                            l'amélioration
+                            continue des processus en place ou de sa transformation digitale.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div>
-            <img src="#" alt="">
-            <h3>DEVELOPMENT</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, laboriosam.
-            </p>
+    <section class="section-what">
+        <h2 class="sections-tittles">CE QUE JE FAIS</h2>
+        <div class="container">
+            <div class="row">
+                <div class="test3 col-md-6">
+                    <i class="fas fa-laptop-code fa-4x"></i>
+                    <div class="col"><img src="#" alt="">
+                        <h3>DEVELOPMENT</h3>
+                        <p><strong>JavaScript</strong> - Création d'applications web avec React, TypeScript, jQuery.
+                        </p>
+                        <p><strong>UI/UX</strong> - Affinité particulière pour l'expérience utilisateur et tout ce qui l'entoure.
+                        </p>
+                        <p><strong>Responsive Design</strong> - Adaptation et optimisation en fonction de la taille de l'écran, que ce soit un ordinateur, une tablette aussi et surtout un smartphone.
+                        </p>
+                    </div>
+                </div>
+                <div class="test3 col-md-6">
+                    <i class="fas fa-headset fa-4x"></i>
+                    <div class="col"><img src="#" alt="">
+                        <h3>SUPPORT</h3>
+                        <p><strong>JavaScript</strong> - Création d'applications web avec React, TypeScript, jQuery.
+                        </p>
+                        <p><strong>UI/UX</strong> - Affinité particulière pour l'expérience utilisateur et tout ce qui l'entoure.
+                        </p>
+                        <p><strong>Responsive Design</strong> - Adaptation et optimisation en fonction de la taille de l'écran, que ce soit un ordinateur, une tablette aussi et surtout un smartphone.
+                        </p>
+                    </div>
+                </div>
+                <div class="test3 col-md-6"> 
+                    <i class="fas fa-cogs fa-4x"></i>
+                    <div class="col"><img src="#" alt="">
+                        <h3>INNOVATION</h3>
+                        <p><strong>JavaScript</strong> - Création d'applications web avec React, TypeScript, jQuery.
+                        </p>
+                        <p><strong>UI/UX</strong> - Affinité particulière pour l'expérience utilisateur et tout ce qui l'entoure.
+                        </p>
+                        <p><strong>Responsive Design</strong> - Adaptation et optimisation en fonction de la taille de l'écran, que ce soit un ordinateur, une tablette aussi et surtout un smartphone.
+                        </p>
+                    </div>
+                </div>
+                <div class="test3 col-md-6">
+                    <i class="fas fa-laptop-code fa-4x"></i>
+                    <div class="col"><img src="#" alt="">
+                        <h3>ALL</h3>
+                        <p><strong>JavaScript</strong> - Création d'applications web avec React, TypeScript, jQuery.
+                        </p>
+                        <p><strong>UI/UX</strong> - Affinité particulière pour l'expérience utilisateur et tout ce qui l'entoure.
+                        </p>
+                        <p><strong>Responsive Design</strong> - Adaptation et optimisation en fonction de la taille de l'écran, que ce soit un ordinateur, une tablette aussi et surtout un smartphone.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="#" alt="">
-            <h3>BUSINESS</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus, aliquid consequuntur ullam
-                provident deleniti!</p>
-        </div>
-        <div>
-            <img src="#" alt="">
-            <h3>SUPPORT</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In odit dolor illo quia!
-            </p>
-        </div>
-        <div>
-            <img src="#" alt="">
-            <h3>ALL</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore asperiores inventore nesciunt
-                consectetur.</p>
-        </div>
+
     </section>
 
     <section>
 
         <img src="#" alt="">
         <h3>ARE YOU INTERESTED ?</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus obcaecati voluptatibus qui
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus obcaecati voluptatibus
+            qui
             magni?
         </p>
         <div>
@@ -97,6 +154,16 @@
         <img src="#" alt="">
         <p>2020 C Johan Toso. Released under. Don't mangez des frites</p>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 
 </body>
 
