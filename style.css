@@ -1,26 +1,34 @@
-html{
+html {
     height: 100%;
-  }
-  body {
+}
+
+body {
     min-height: 100%;
     margin: 0;
     color: #646C79;
-  }
+}
+
+p {
+    font-size: 16pt;
+    font-weight: lighter;
+}
+
 #main-background {
     height: 100vh;
-    background-image:url(img/Lux-city.jpg);
+    background-image: url(img/Lux-city.jpg);
     background-size: cover;
-    background-position: top;  
+    background-position: top;
 }
 
 nav a {
     text-decoration: none;
     color: lightgrey;
 }
+
 nav a:hover {
     background-color: transparent;
     color: #999999;
-  }
+}
 
 #container-title {
     height: 100vh;
@@ -58,14 +66,12 @@ nav a:hover {
 .section-who {
     padding: 20vmin 0vmin;
     background-color: #282f40;
+    /* background-image:url(img/geeks-coffee-table-wood-mac-computer.jpg);
+    background-size: cover;
+    background-position: top  */
 }
 
-#section-who {
-    height: 100vh;
-    background-image:url(img/Lux-city.jpg);
-    background-size: cover;
-    background-position: top;  
-}
+
 
 
 .section-who .row .col-md-6 .pray img {
@@ -92,15 +98,11 @@ nav a:hover {
 }
 
 .section-who .row .col-md-6 .panel h1 {
-    font-weight: bold;
+    font-weight: 450;
     padding: 0.4em 0;
     font-size: 2em;
 }
 
-.section-who .row .col-md-6 .panel p {
-    font-size: 0.9em;
-    color: rgba(0, 0, 0, 0.5);
-}
 
 /* 
 SECTION WHAT I DO  */
@@ -108,12 +110,15 @@ SECTION WHAT I DO  */
 .sections-tittles {
     padding-top: 20px;
     text-align: center;
-}
-.section-what .container {
-    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
-.section-what .test3 {
+#section-what .container {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+#section-what .test3 {
     display: inline;
     justify-content: center;
     text-align: center;
@@ -121,25 +126,29 @@ SECTION WHAT I DO  */
     position: relative;
 }
 
-.section-what .test3 p {
+#section-what .test3 p {
     text-align: left;
 }
 
-.section-what .test3 h3 {
+#section-what .test3 h3 {
     margin-bottom: 30px;
+}
+.container-logos {
+    padding-bottom: 20px;
 }
 
 /* ICONS & TITLES*/
 
 h1 {
-font-size: 4em;
+    font-size: 4em;
 }
 
 h2 {
     font-size: 1.6em;
-    }
+}
 
-.fa-laptop-code, .fa-cogs {
+.fa-laptop-code,
+.fa-cogs {
     color: #646C79;
     -webkit-text-stroke: 5px white;
 }
@@ -150,10 +159,91 @@ h2 {
 }
 
 .sections-tittles:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width: 7%; /* Change this to whatever width you want. */
-    padding-top: 40px; /* This creates some space between the element and the border. */
-    border-bottom: thin solid #646C79; /* This creates the border. Replace black with whatever color you want. */
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    /* This will center the border. */
+    width: 7%;
+    /* Change this to whatever width you want. */
+    padding-top: 40px;
+    /* This creates some space between the element and the border. */
+    border-bottom: thin solid #646C79;
+    /* This creates the border. Replace black with whatever color you want. */
+}
+
+/* Section SKILLS */
+
+#skills {
+    display: flex;
+}
+
+#skills img {
+    padding: 10px;
+    height: 80px;
+    object-fit: cover;
+    -webkit-transition: background-color 1.3s ease-out;
+    -moz-transition: background-color 1.3s ease-out;
+    -o-transition: background-color 1.3s ease-out;
+    transition: background-color 1.3s ease-out;
+    border-radius: 0.5em;
+}
+
+#skills img:hover {
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.5s ease;
+    background-color: #ececec;
+}
+
+
+#section-what .logo {
+    padding: 10px;
+    height: 80px;
+    object-fit: cover;
+    -webkit-transition: background-color 1.3s ease-out;
+    -moz-transition: background-color 1.3s ease-out;
+    -o-transition: background-color 1.3s ease-out;
+    transition: background-color 1.3s ease-out;
+    border-radius: 0.5em;
+}
+
+#section-what .logo:hover {
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.5s ease;
+    background-color: #ececec;
+}
+
+#projects {
+    background-color: #282f40;
+    padding-bottom: 50px;
+}
+#projects h2 {
+    color: white;
+}
+
+#section-contact {
+    background-color: #e9e9e9;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
+#section-contact p {
+ text-align: center;
+}
+
+#section-footer {
+    background-color: #d8d8d8;
+}
+
+.container-footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-rs i {
+    margin: 50px;
 }
