@@ -265,28 +265,21 @@ h2 {
     color: white;
 }
 
-#section-contact {
-    background-color: #e9e9e9;
-    padding-bottom: 40px;
-    padding-top: 10px;
-}
-
-#section-contact p {
-    text-align: center;
-}
 
 #section-footer {
     background-color: #d8d8d8;
+    height: 200px;
 }
 
-.container-footer {
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+/* FOOTER  */
+
+#section-footer i {
+    margin: 20px;
 }
 
-.container-rs i {
-    margin: 50px;
+@media (max-width: 575.98px) { 
+    #section-footer i {
+        margin: 10px;
+    }
+
 }
