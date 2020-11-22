@@ -58,11 +58,8 @@ p {
     padding-bottom: 10px;
 }
 
-.intro-down-p {
-    font-size: 1.1em;
-}
-
 .section-who img {
+    position: relative;
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -78,8 +75,19 @@ p {
     cursor: pointer;
 }
 
-.section-who p {
+.section-who .intro-down-p {
+    position: absolute;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 25px;
+    background-color: #E5E5E5;
+    opacity: 0.9;
     text-align: left;
+    position: relative;
+    top: -40px;
+    right: -25px;
+    -webkit-box-shadow: inset 0px 0px 5px -1px rgb(105, 105, 105);
+    box-shadow: inset 0px 0px 5px -1px lightgray;
 }
 
 /* QUOTATION MARK*/
@@ -180,6 +188,7 @@ SECTION WHAT I DO  */
     -webkit-box-shadow: inset 0px 3px 2px -2px #D3D3D3;
     box-shadow: inset 0px 3px 2px -2px #D3D3D3;
     padding: 30px;
+    background-color: #fafafa;
 }
 
 #section-what .test3 {
@@ -230,6 +239,89 @@ SECTION WHAT I DO  */
     padding-bottom: 10px;
 }
 
+/* POST IT's  */
+.post-it {
+    background-color: #ffffa534;
+    height: 225px;
+    margin: 20px;
+    padding: 2%;
+    box-shadow: 2px 4px 6px #444;
+    -moz-box-shadow: 2px 4px 6px #444;
+    -webkit-box-shadow: 2px 4px 6px #444;
+    transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    border-bottom-right-radius: 60px 10px;
+}
+
+.post-it p {
+    position: relative;
+    font-family: 'Nerko One', cursive;
+    font-size: 1em;
+    line-height: 0.8em;
+}
+
+#post-it_pin {
+    position: absolute;
+    top: -26px;
+    left: -5px;
+}
+
+.post-it2 {
+    background-color: #ffffa534;
+    height: 225px;
+    margin: 20px;
+    padding: 2%;
+    box-shadow: 2px 4px 6px #444;
+    -moz-box-shadow: 2px 4px 6px #444;
+    -webkit-box-shadow: 2px 4px 6px #444;
+}
+
+.post-it2 p {
+    position: relative;
+    font-family: 'Nerko One', cursive;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+#post-it_pin2 {
+    position: absolute;
+    top: -20px;
+    left: 120px;
+}
+
+.post-it3 {
+    background-color: #ffffa534;
+    height: 225px;
+    margin: 20px;
+    padding: 2%;
+    box-shadow: 2px 4px 6px #444;
+    -moz-box-shadow: 2px 4px 6px #444;
+    -webkit-box-shadow: 2px 4px 6px #444;
+}
+
+.post-it3 p {
+    position: relative;
+    font-family: 'Nerko One', cursive;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+#post-it_pin3 {
+    color: rgba(255, 136, 0, 0.753);
+    position: absolute;
+    top: -20px;
+    left: 120px;
+    transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+}
+
+
 /* ICONS & TITLES*/
 
 h1 {
@@ -252,8 +344,10 @@ h2 {
 }
 
 
+/* PROJECTS  */
+
 #projects {
-    background-color: #282f40;
+    background-color: white;
     padding-bottom: 50px;
 }
 
@@ -267,7 +361,9 @@ h2 {
     height: 200px;
 }
 
-font-family: 'Nerko One', cursive;
+
+
+/* font-family: 'Nerko One', cursive; */
 
 /* FOOTER  */
 
