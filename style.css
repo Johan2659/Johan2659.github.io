@@ -2,6 +2,7 @@ body {
     margin: 0;
     color: #646C79;
     height: 100vh;
+    font-family: 'Open Sans', sans-serif;
 }
 
 p {
@@ -24,6 +25,7 @@ p {
     background-color: white;
     opacity: 0.28;
 }
+
 #main-background .main-title h2 {
     color: white;
     background-color: black;
@@ -31,26 +33,33 @@ p {
     text-align: center;
 }
 
-nav a {
-    text-decoration: none;
-    color: lightgrey;
-}
-
-nav a:hover {
-    background-color: transparent;
-    color: #999999;
+#main-background .yolo {
+    color: white;
 }
 
 /********** section 1 **************/
 
 .section-who {
-    padding-bottom: 50px;
-    -webkit-box-shadow: inset 0px 11px 3px -10px #000000;
-    box-shadow: inset 0px 11px 3px -10px #000000;
+    padding-top: 30px;
 }
 
-.section-who .pics {
+.intro {
+    line-height: 1.2em;
+}
+
+.intro h1 {
+    font-size: 3.2rem;
+    color: black;
+    letter-spacing: -0.07em;
+}
+
+.intro .intro-upper-p {
+    font-size: 1.3em;
     padding-bottom: 10px;
+}
+
+.intro-down-p {
+    font-size: 1.1em;
 }
 
 .section-who img {
@@ -73,19 +82,41 @@ nav a:hover {
     text-align: left;
 }
 
-
 /* QUOTATION MARK*/
 #quotation {
     position: relative;
-    background-color: rgb(175, 175, 175);
-    color: white;
-    margin: 100px 0px 100px 0px; 
+    background-color: #fafafa;
+    color: #646c79;
+    margin-bottom: 40px;
+    margin-top: 30px;
     padding: 30px;
-    border: solid 1px;
+    border: solid 1px transparent;
     border-radius: 10px;
     transition: .5s ease;
     backface-visibility: hidden;
     font-weight: 500;
+}
+
+#quotation-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+}
+
+#quotation-title h2 {
+    font-size: 1.4em;
+    background-color: rgb(241, 241, 241);
+    border-radius: 8px;
+    padding: 5px 10px;
+    position: relative;
+    top: 5px;
+    right: -20px;
+    -moz-transform: rotate(33deg);
+    -webkit-transform: rotate(33deg);
+    -o-transform: rotate(33deg);
+    -ms-transform: rotate(33deg);
+    transform: rotate(33deg);
 }
 
 #quotation:hover {
@@ -134,17 +165,6 @@ nav a:hover {
 }
 
 
-
-
-/* .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-} */
 /* 
 SECTION WHAT I DO  */
 
@@ -152,6 +172,13 @@ SECTION WHAT I DO  */
     padding-top: 20px;
     text-align: center;
     margin-bottom: 40px;
+}
+
+#section-what {
+    /* -webkit-box-shadow: inset 0px 3px 9px -1px lightgray; 
+    box-shadow: inset 0px 3px 9px -1px lightgray; */
+    -webkit-box-shadow: inset 0px 3px 2px -2px #D3D3D3;
+    box-shadow: inset 0px 3px 2px -2px #D3D3D3;
 }
 
 #section-what .container {
@@ -277,9 +304,11 @@ h2 {
     margin: 20px;
 }
 
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
     #section-footer i {
         margin: 10px;
     }
 
 }
+
+/* ANIMATIONS */
