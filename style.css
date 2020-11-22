@@ -3,6 +3,7 @@ body {
     color: #646C79;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
+
 }
 
 p {
@@ -24,6 +25,7 @@ p {
     color: black;
     background-color: white;
     opacity: 0.28;
+    font-size: 3.8em;
 }
 
 #main-background .main-title h2 {
@@ -33,9 +35,20 @@ p {
     text-align: center;
 }
 
-#main-background .yolo {
+#main-background .navbloc {
     color: white;
 }
+
+.navbloc {
+    position: absolute;
+}
+
+.nav-link {
+    color: rgb(68, 68, 68)!important;
+    font-weight: 600;
+}
+
+
 
 /********** section 1 **************/
 
@@ -347,25 +360,34 @@ h2 {
 /* PROJECTS  */
 
 #projects {
-    background-color: white;
+    background-color: #2a2a2a;
     padding-bottom: 50px;
+    height: 100vh;
+}
+
+#projects h1 {
+    color: white;
 }
 
 #projects h2 {
     color: white;
 }
 
+.container-project {
+    height: auto;
+    max-width: 100%;
+    margin: 17px;
+    padding: 10px;
+}
+
+/* font-family: 'Nerko One', cursive; */
+
+/* FOOTER  */
 
 #section-footer {
     background-color: #d8d8d8;
     height: 200px;
 }
-
-
-
-/* font-family: 'Nerko One', cursive; */
-
-/* FOOTER  */
 
 #section-footer i {
     margin: 20px;
@@ -377,5 +399,3 @@ h2 {
     }
 
 }
-
-/* ANIMATIONS */
