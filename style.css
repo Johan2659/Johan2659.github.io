@@ -179,11 +179,7 @@ SECTION WHAT I DO  */
     box-shadow: inset 0px 3px 9px -1px lightgray; */
     -webkit-box-shadow: inset 0px 3px 2px -2px #D3D3D3;
     box-shadow: inset 0px 3px 2px -2px #D3D3D3;
-}
-
-#section-what .container {
-    margin-top: 50px;
-    padding-bottom: 50px;
+    padding: 30px;
 }
 
 #section-what .test3 {
@@ -204,6 +200,34 @@ SECTION WHAT I DO  */
 
 .container-logos {
     padding-bottom: 20px;
+}
+
+#section-what .logo {
+    padding: 10px;
+    height: 80px;
+    object-fit: cover;
+    -webkit-transition: background-color 1.3s ease-out;
+    -moz-transition: background-color 1.3s ease-out;
+    -o-transition: background-color 1.3s ease-out;
+    transition: background-color 1.3s ease-out;
+    border-radius: 0.5em;
+}
+
+#section-what .logo:hover {
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.5s ease;
+    background-color: #ececec;
+}
+
+.what h1 {
+    font-size: 3.2rem;
+    color: black;
+    letter-spacing: -0.07em;
+}
+
+.what .what-upper-p {
+    font-size: 1.30em;
+    padding-bottom: 10px;
 }
 
 /* ICONS & TITLES*/
@@ -227,61 +251,6 @@ h2 {
     -webkit-text-stroke: 4px white;
 }
 
-.sections-tittles:after {
-    content: "";
-    /* This is necessary for the pseudo element to work. */
-    display: block;
-    /* This will put the pseudo element on its own line. */
-    margin: 0 auto;
-    /* This will center the border. */
-    width: 7%;
-    /* Change this to whatever width you want. */
-    padding-top: 40px;
-    /* This creates some space between the element and the border. */
-    border-bottom: thin solid #646C79;
-    /* This creates the border. Replace black with whatever color you want. */
-}
-
-/* Section SKILLS */
-
-#skills {
-    display: flex;
-}
-
-#skills img {
-    padding: 10px;
-    height: 80px;
-    object-fit: cover;
-    -webkit-transition: background-color 1.3s ease-out;
-    -moz-transition: background-color 1.3s ease-out;
-    -o-transition: background-color 1.3s ease-out;
-    transition: background-color 1.3s ease-out;
-    border-radius: 0.5em;
-}
-
-#skills img:hover {
-    transition: all 0.6s ease;
-    -webkit-transition: all 0.5s ease;
-    background-color: #ececec;
-}
-
-
-#section-what .logo {
-    padding: 10px;
-    height: 80px;
-    object-fit: cover;
-    -webkit-transition: background-color 1.3s ease-out;
-    -moz-transition: background-color 1.3s ease-out;
-    -o-transition: background-color 1.3s ease-out;
-    transition: background-color 1.3s ease-out;
-    border-radius: 0.5em;
-}
-
-#section-what .logo:hover {
-    transition: all 0.6s ease;
-    -webkit-transition: all 0.5s ease;
-    background-color: #ececec;
-}
 
 #projects {
     background-color: #282f40;
@@ -297,6 +266,8 @@ h2 {
     background-color: #d8d8d8;
     height: 200px;
 }
+
+font-family: 'Nerko One', cursive;
 
 /* FOOTER  */
 
