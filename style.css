@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    height: 100vh;
     margin: 0;
     color: #646C79;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 p {
@@ -44,7 +48,7 @@ p {
 }
 
 .nav-link {
-    color: rgb(68, 68, 68)!important;
+    color: rgb(68, 68, 68) !important;
     font-weight: 600;
 }
 
@@ -115,11 +119,13 @@ p {
     bottom: 0;
     position: relative;
     display: inline-block;
-    }
-    .btn-one span {
+}
+
+.btn-one span {
     transition: all 0.3s;
-    }
-    .btn-one::before {
+}
+
+.btn-one::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -136,15 +142,18 @@ p {
     border-top-color: red;
     border-bottom-color: red;
     transform: scale(0.1, 1);
-    }
-    .btn-one:hover span {
+}
+
+.btn-one:hover span {
     letter-spacing: 2px;
-    }
-    .btn-one:hover::before {
+}
+
+.btn-one:hover::before {
     opacity: 1;
     transform: scale(1, 1);
-    }
-    .btn-one::after {
+}
+
+.btn-one::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -153,12 +162,13 @@ p {
     height: 100%;
     z-index: 1;
     transition: all 0.3s;
-    background-color: rgba(255,255,255,0.1);
-    }
-    .btn-one:hover::after {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-one:hover::after {
     opacity: 0;
     transform: scale(0.1, 1);
-    }
+}
 
 
 
@@ -426,9 +436,7 @@ h2 {
 /* PROJECTS  */
 
 #projects {
-    background-color: #2a2a2a;
-    padding-bottom: 50px;
-    height: 100vh;
+    background-color: #2a2a2a;  
 }
 
 #projects h1 {
@@ -464,4 +472,14 @@ h2 {
         margin: 10px;
     }
 
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+#testttt {
+    height: 100vh;
+    padding: 10em;
 }

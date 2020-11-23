@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+section {
+    height: 100vh;
+    padding: 10em;
+}
+
+/*# sourceMappingURL=/style2.6dad2314.css.map */

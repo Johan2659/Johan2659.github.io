@@ -1,0 +1,24 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johan2659/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johan2659/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Johan2659/Portfolio#readme",
+  "dependencies": {
+    "locomotive-scroll": "^4.0.4",
+    "typed.js": "^2.0.11"
+  }
+}
