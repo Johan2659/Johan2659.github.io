@@ -1,5 +1,5 @@
-import LocomotiveScroll from '/locomotive-scroll';
-import Typed from 'typed.js';
+import LocomotiveScroll from 'locomotive-scroll';
+import Typed from '/typed.js';
 
 // LOCOMOTIVE SCROLL
 
