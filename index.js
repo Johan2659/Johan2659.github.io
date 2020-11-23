@@ -13,6 +13,8 @@ console.log('ok');
 // TOOLTIP BOOTSTRAP
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
+
+    
   });
 
 
