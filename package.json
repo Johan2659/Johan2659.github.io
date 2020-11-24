@@ -21,5 +21,9 @@
   "homepage": "https://github.com/Johan2659/Portfolio#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "locomotive-scroll": "^4.0.4",
+    "typed.js": "^2.0.11"
   }
 }
