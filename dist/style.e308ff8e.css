@@ -406,7 +406,7 @@ h2 {
         position: absolute;
         font-size: 0.9em;
         font-weight: 500;
-        padding: 25px;
+        padding: 20px;
         margin-top: 5px;
         background-color: #E5E5E5;
         opacity: 0.9;
@@ -416,6 +416,10 @@ h2 {
         right: 0;
         -webkit-box-shadow: inset 0px 0px 5px -1px rgb(105, 105, 105);
         box-shadow: inset 0px 0px 5px -1px lightgray;
+    }
+
+    .c-scrollbar {
+        display: none;
     }
 
 }
