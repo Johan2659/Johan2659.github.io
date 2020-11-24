@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
   "repository": {
@@ -21,8 +22,5 @@
   "dependencies": {
     "locomotive-scroll": "^4.0.4",
     "typed.js": "^2.0.11"
-  },
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4"
   }
 }

@@ -1,5 +1,5 @@
-import LocomotiveScroll from '/locomotive-scroll';
-import Typed from '/typed.js';
+import LocomotiveScroll from 'locomotive-scroll';
+import Typed from 'typed.js';
 
 // LOCOMOTIVE SCROLL
 
@@ -13,8 +13,6 @@ console.log('ok');
 // TOOLTIP BOOTSTRAP
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
-
-    
   });
 
 
@@ -32,5 +30,3 @@ var typed = new Typed('.animate-title', {
     typeSpeed: 100,
     loop: false,
   });
-
- 
