@@ -528,6 +528,7 @@ h2 {
 
 #section-footer i {
     margin: 27px;
+    cursor: pointer;
 }
 
 .linkedin:hover {
