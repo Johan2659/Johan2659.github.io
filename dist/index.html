@@ -52,7 +52,7 @@
                                 <div id="container-available">
                                     <div class="ringring"></div>
                                     <div class="circle"></div>
-                                    <span id="available">AVAILABLE NOW
+                                    <span data-toggle="modal" data-target="#contactModal" id="available">AVAILABLE NOW
                                     </span>
                                 </div>
                             </a>
@@ -63,42 +63,55 @@
             </nav>
         </header>
 
-        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Interested ?</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+                        <div id="modal-logo">
+                            <h3>Interested ?</h3>
+                        </div>
                     </div>
                     <div class="modal-body">
-                      <form>
-                        <div class="form-group col-xs-3">
-                          <label for="firstName" class="col-form-label">First Name / Last Name</label>
-                          <input type="text" class="form-control" id="firstName">
+                        <div class="container-fluid">
+                            <div class="row ">
+                                <div id="text-contact-conlude" class="col-md-12">I'm actually available for a new
+                                    position, so feel free to
+                                    contact me for more information, or just a little coffee.</div>
+                                <div class="col-md-12 icon-contact"><i class="fas fa-paper-plane"></i>  tosojohan@gmail.com
+                                </div>
+                                <div class="col-md-12 icon-contact"><i class="fas fa-mobile-alt"></i>  +33.6.24.04.05.34
+                                    <hr class="border-top">
+                                </div>
+                                <div class="col-md-12 icon-contact">  OR
+                                </div>
+                            </div>
+                            <hr class="border-top">
                         </div>
-                        <div class="form-group">
-                            <label for="email" class="col-form-label">E-mail Address</label>
-                            <input type="text" class="form-control" id="email">
-                          </div>
-                          <div class="form-group">
-                            <label for="topic" class="col-form-label">Topic</label>
-                            <input type="text" class="form-control" id="topic">
-                          </div>
-                        <div class="form-group">
-                          <label for="message-text" class="col-form-label">Message</label>
-                          <textarea rows="6" class="form-control" id="message-text"></textarea>
-                        </div>
-                      </form>
+                        <form action="POST" data-netlify="true">
+                            <div class="form-group col-xs-3">
+                                <label for="name" class="col-form-label">Your name:</label>
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Your email:</label>
+                                <input type="text" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="col-form-label">Your message:</label>
+                                <textarea rows="6" class="form-control" id="message" name="message"></textarea>
+                            </div>
+                            <div class="form-group">
+                               <div data-netflify-recaptcha="true"></div>
+                            </div>
+                        </form>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Send message</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-dark">Send message</button>
                     </div>
-                  </div>
                 </div>
-              </div> -->
+            </div>
+        </div>
 
 
         <div class="container main-title h-100 d-flex justify-content-center">
@@ -291,19 +304,20 @@
 
     <footer id="section-footer">
         <div class="container h-100 d-flex justify-content-around" id="Contact">
-            <div class="my-auto">
-                <i class="fas fa-envelope fa-3x" data-toggle="tooltip" title="Click to copy my email address."><a hidden="" href="mailto:tosojohan@gmail.com">tosojohan@gmail.com</a></i>
-                <i class="fab fa-github fa-3x" data-toggle="tooltip" title="My awesome repositories."></i>
-                <i class="fab fa-linkedin fa-3x" data-toggle="tooltip" title="Add me on Linkedin!"></i>
-                <div class="d-flex justify-content-center">
-                    <p>2020 &copy; Toso Johan with &hearts; </p>
+            <div class="row">
+                <div class="my-auto">
+                    <i class="fas fa-envelope fa-3x mail" data-toggle="modal" data-target="#contactModal"></i>
+                    <i class="fab fa-github fa-3x github" data-toggle="tooltip" title="My awesome repositories."></i>
+                    <i class="fab fa-linkedin fa-3x linkedin" data-toggle="tooltip" title="Add me on Linkedin!"></i>
+                    <div class="d-flex justify-content-center">
+                        <p>2020 &copy; Toso Johan </p>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- <script src="jquery.easeScroll.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">

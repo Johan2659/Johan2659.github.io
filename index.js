@@ -22,6 +22,24 @@ $(document).ready(function () {
     return false;
   });
 
+  // COPY EMAIL
+
+function copyMail(mail) {
+  /* Get the text field */
+  var mail = "";
+
+  /* Select the text field */
+  mail.select();
+  mail.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + mail.value);
+
+}
+
 });
 
 // $(function() {
@@ -43,4 +61,3 @@ var typed = new Typed('.animate-title', {
 });
 
 
-// COLLAPSE

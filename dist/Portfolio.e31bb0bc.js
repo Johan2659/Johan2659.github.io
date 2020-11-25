@@ -4323,7 +4323,24 @@ $(document).ready(function () {
       scrollTop: $(page).offset().top
     }, speed);
     return false;
-  });
+  }); // COPY EMAIL
+
+  function copyMail(mail) {
+    /* Get the text field */
+    var mail = "";
+    /* Select the text field */
+
+    mail.select();
+    mail.setSelectionRange(0, 99999);
+    /*For mobile devices*/
+
+    /* Copy the text inside the text field */
+
+    document.execCommand("copy");
+    /* Alert the copied text */
+
+    alert("Copied the text: " + mail.value);
+  }
 }); // $(function() {
 //     $("html, body").animate({scrollTop : 0}, 1500);
 // });
@@ -4332,7 +4349,7 @@ $(document).ready(function () {
 var typed = new _typed.default('.animate-title', (_Typed = {
   strings: ["", "A CURIOUS DEVELOPER", "A COOL DEVELOPER", "YOUR NEXT DEVELOPER"],
   typeSpeed: 100
-}, _defineProperty(_Typed, "typeSpeed", 100), _defineProperty(_Typed, "typeSpeed", 100), _defineProperty(_Typed, "loop", false), _Typed)); // COLLAPSE
+}, _defineProperty(_Typed, "typeSpeed", 100), _defineProperty(_Typed, "typeSpeed", 100), _defineProperty(_Typed, "loop", false), _Typed));
 },{"locomotive-scroll":"node_modules/locomotive-scroll/dist/locomotive-scroll.esm.js","typed.js":"node_modules/typed.js/lib/typed.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

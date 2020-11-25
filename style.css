@@ -1,6 +1,6 @@
-
-body, html {
-    position:relative;
+body,
+html {
+    position: relative;
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -430,7 +430,7 @@ SECTION WHAT I DO  */
     color: rgba(255, 136, 0, 0.753);
     position: absolute;
     top: -20px;
-    left: 120px;
+    left: 100px;
     transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
     -webkit-transform: rotate(-10deg);
@@ -493,6 +493,27 @@ h2 {
     transform: scale(1.1);
 }
 
+.modal-header { 
+    display: block;
+    text-align: center;
+}
+
+#modal-logo {
+   opacity: 0.8;
+}
+
+#text-contact-conlude {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.icon-contact {
+    text-align: center;
+}
+
+.icon-contact i {
+    padding-right: 20px;
+}
 
 
 /* font-family: 'Nerko One', cursive; */
@@ -500,17 +521,30 @@ h2 {
 /* FOOTER  */
 
 #section-footer {
-    position: relative;
     background-color: #d8d8d8;
     height: 200px;
+    position: relative;
 }
 
 #section-footer i {
-    margin: 20px;
+    margin: 27px;
 }
 
-@media (max-width: 575.98px) {
+.linkedin:hover {
+   color: #0077B5;
+}
+.mail:hover {
+    color: #ea4335;
+ }
+ .github:hover {
+    color: #24292e;
+ }
  
+
+
+
+@media (max-width: 575.98px) {
+
 
     .section-who .intro-down-p {
         position: absolute;
