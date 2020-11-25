@@ -4307,16 +4307,27 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-// LOCOMOTIVE SCROLL
-var scroll = new _locomotiveScroll.default({
-  el: document.querySelector('[data-scroll-container]'),
-  smooth: true
-});
-console.log('ok'); // TOOLTIP BOOTSTRAP
-
+//LOCOMOTIVE SCROLL
+// const scroll = new LocomotiveScroll({
+//   el: document.getElementByI('[data-scroll-container]'),
+//   smooth: true
+// });
+// console.log('ok');
+// TOOLTIP BOOTSTRAP
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
-}); // TYPED JS
+  $('.scrollTo').on('click', function () {
+    var page = $(this).attr('href');
+    var speed = 750;
+    $('html, body').animate({
+      scrollTop: $(page).offset().top
+    }, speed);
+    return false;
+  });
+}); // $(function() {
+//     $("html, body").animate({scrollTop : 0}, 1500);
+// });
+// TYPED JS
 
 var typed = new _typed.default('.animate-title', (_Typed = {
   strings: ["", "A CURIOUS DEVELOPER", "A COOL DEVELOPER", "YOUR NEXT DEVELOPER"],
@@ -4350,7 +4361,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55100" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62523" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

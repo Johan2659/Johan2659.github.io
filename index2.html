@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/gh/shakrmedia/tuesday@v1.1.0/build/tuesday.min.css" />
-        
+    <link rel="stylesheet" href="/css/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
 
     <title>Hi My Name is Johan</title>
@@ -32,19 +32,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link scrollTo" href="#Home">Home</a>
+                            <a class="nav-link" href="/#Home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scrollTo" href="#About">About Me</a>
+                            <a class="nav-link" href="/#About">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scrollTo" href="#Skills">Skills</a>
+                            <a class="nav-link" href="/#Skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scrollTo" href="#Portfolio">Portfolio</a>
+                            <a class="nav-link" href="/#Portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scrollTo" href="#Contact">Contact</a>
+                            <a class="nav-link" href="/#Contact">Contact</a>
                         </li>
                         <li class="nav-item">
                             <hr class="border-top">
@@ -114,7 +114,9 @@
     </section>
 
     <section class="section-who">
-        <div class="container intro" id="About">
+        <div data-scroll-container> 
+        <div class="container intro" id="About" data-scroll-class="scroll-class" data-scroll-direction="horizontal"
+            data-scroll data-scroll-speed="-1">
             <div class="row">
                 <div class="col">
                     <h1>About Me</h1>
@@ -127,7 +129,8 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <img src="img/Photo-Toso-Johan2.jpg" />
-                    <p class="text-center intro-down-p"> My optimism and curiosity
+                    <p data-scroll-class="scroll-class" data-scroll data-scroll-speed="1"
+                        class="text-center intro-down-p"> My optimism and curiosity
                         are always leading me to
                         discover and learn,
                         to gain new experience in my whole life.
@@ -139,7 +142,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <img src="img/chairs-black.jpg" />
-                    <p class="text-center intro-down-p"> I like to exchange my knowledge to progress in the same
+                    <p data-scroll-class="scroll-class" data-scroll data-scroll-speed="1"
+                        class="text-center intro-down-p"> I like to exchange my knowledge to progress in the same
                         way,
                         but
                         also to
@@ -148,7 +152,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <img src="img/mug-developer-white-titanic-fun.jpg" />
-                    <p class="text-center intro-down-p"> I know how to work seriously, but always with smile and a
+                    <p data-scroll-class="scroll-class" data-scroll data-scroll-speed="1"
+                        class="text-center intro-down-p"> I know how to work seriously, but always with smile and a
                         lot
                         of
                         enthusiasm to spend a good day together at work, and after.
@@ -156,44 +161,45 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <img src="img/johan-snow-morzine.jpg" />
-                    <p class="text-center intro-down-p"> I also like sports, music, visiting new places, cooking or
+                    <p data-scroll-class="scroll-class" data-scroll data-scroll-speed="1"
+                        class="text-center intro-down-p"> I also like sports, music, visiting new places, cooking or
                         spend
                         my Saturday evening doing
                         monitor technology. (Okay with just one beer, I swear)
                     </p>
                 </div>
-
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="collapse" id="collapseExample">
-                        <p>TEST</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="collapse" id="collapseExample">
+                    <p>TEST</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div id="quotation">
+                    <div id="quotation-title">
+                        <h2>Featured</h2>
                     </div>
+                    <i class="fas fa-quote-left fa-2x"></i>
+                    <div>He eats, sleeps, breathes and folds his clothes in HTML. He was kind enough to explain his
+                        career to us. </div> <i class="fas fa-quote-right fa-2x"></i>
+                    <div class="middle">
+                        <div class="text"><a
+                                href="https://oclock.io/blog/1340/johan-celui-qui-plie-ses-vetements-en-html"
+                                target="_blank" data-toggle="tooltip" title="A new tab will be open."><span>Click
+                                    here
+                                    to read my interview</span></a> </div>
+                    </div>
+                    <span class="sign">By <strong>O'clock.io</strong>, 15 janv 2019.</span>
                 </div>
             </div>
 
-
-            <div class="container d-flex justify-content-center">
-                <div class="row">
-                    <div id="quotation">
-                        <div id="quotation-title">
-                            <h2>Featured</h2>
-                        </div>
-                        <i class="fas fa-quote-left fa-2x"></i>
-                        <div>He eats, sleeps, breathes and folds his clothes in HTML. He was kind enough to explain his
-                            career to us. </div> <i class="fas fa-quote-right fa-2x"></i>
-                        <div class="middle">
-                            <div class="text"><a
-                                    href="https://oclock.io/blog/1340/johan-celui-qui-plie-ses-vetements-en-html"
-                                    target="_blank" data-toggle="tooltip" title="A new tab will be open."><span>Click
-                                        here
-                                        to read my interview</span></a> </div>
-                        </div>
-                        <span class="sign">By <strong>O'clock.io</strong>, 15 janv 2019.</span>
-                    </div>
-                </div>
-
-            </div>
+        </div>
         </div>
     </section>
 
@@ -201,16 +207,20 @@
         <div class="container what" id="Skills">
             <div class="row">
                 <div class="col">
-
-                    <h1>Skills</h1>
+                    <div data-scroll-container> 
+                    <div data-scroll-class="scroll-class" data-scroll-direction="horizontal" data-scroll
+                        data-scroll-speed="-1">
+                        <h1>Skills</h1>
+                    </div>
+                    <p class="what-upper-p" data-scroll-class="scroll-class" data-scroll-direction="horizontal"
+                        data-scroll data-scroll-speed="1">I mainly work with the following technologies, while
+                        keeping an eye out
+                        for
+                        news and trends.</p>
                 </div>
-                <p class="what-upper-p">I mainly work with the following technologies, while
-                    keeping an eye out
-                    for
-                    news and trends.</p>
+                </div>
             </div>
         </div>
-
         <div class="container">
             <div class="row h-100 d-flex justify-content-center">
                 <div class="col-md-3 post-it container-sm">
@@ -322,7 +332,6 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- <script src="jquery.easeScroll.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>

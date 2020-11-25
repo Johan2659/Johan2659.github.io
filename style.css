@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+
 
 html,
 body {
@@ -10,9 +8,10 @@ body {
     padding: 0px;
     color: #646C79;
     font-family: 'Open Sans', sans-serif;
-    overflow: visible;
 }
-
+* {
+    box-sizing: border-box;
+}
 /* @media (min-height: 300px) {
     nav ul {
       position: sticky;
