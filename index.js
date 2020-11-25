@@ -60,4 +60,3 @@ var typed = new Typed('.animate-title', {
   loop: false,
 });
 
-
