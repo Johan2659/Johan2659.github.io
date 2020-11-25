@@ -89,7 +89,7 @@ p {
 }
 
 .navbar i,
-a {
+.navbar a {
     color: black !important;
     font-weight: 600;
 }
@@ -529,6 +529,10 @@ h2 {
 #section-footer i {
     margin: 27px;
     cursor: pointer;
+}
+
+#section-footer a {
+    color: #646c79;
 }
 
 .linkedin:hover {
