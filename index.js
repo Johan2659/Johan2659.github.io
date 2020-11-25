@@ -21,8 +21,8 @@ $(document).ready(function(){
 var typed = new Typed('.animate-title', {
     strings: [
       "",
-      "A COOL DEVELOPER",
       "A CURIOUS DEVELOPER",
+      "A COOL DEVELOPER",
       "YOUR NEXT DEVELOPER"
     ],
     typeSpeed: 100,

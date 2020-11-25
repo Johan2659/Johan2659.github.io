@@ -4319,7 +4319,7 @@ $(document).ready(function () {
 }); // TYPED JS
 
 var typed = new _typed.default('.animate-title', (_Typed = {
-  strings: ["", "A COOL DEVELOPER", "A CURIOUS DEVELOPER", "YOUR NEXT DEVELOPER"],
+  strings: ["", "A CURIOUS DEVELOPER", "A COOL DEVELOPER", "YOUR NEXT DEVELOPER"],
   typeSpeed: 100
 }, _defineProperty(_Typed, "typeSpeed", 100), _defineProperty(_Typed, "typeSpeed", 100), _defineProperty(_Typed, "loop", false), _Typed));
 },{"locomotive-scroll":"node_modules/locomotive-scroll/dist/locomotive-scroll.esm.js","typed.js":"node_modules/typed.js/lib/typed.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -4350,7 +4350,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59507" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55100" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
