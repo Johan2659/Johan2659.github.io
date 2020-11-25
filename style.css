@@ -1,17 +1,20 @@
 
-
-html,
-body {
+body, html {
+    position:relative;
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     color: #646C79;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    background-color: #d8d8d8;
 }
+
 * {
     box-sizing: border-box;
 }
+
 /* @media (min-height: 300px) {
     nav ul {
       position: sticky;
@@ -57,18 +60,32 @@ p {
 
 }
 
-.navbar:hover{
+.navbar:hover {
     -webkit-animation: 1s ease 0s normal forwards 1 fadein;
     animation: 1s ease 0s normal forwards 1 fadein;
 }
 
-@keyframes fadein{
+@keyframes fadein {
 
-    0% { opacity:0.4; }
-    49% { opacity:0.45; }
-    66% { opacity:0.5; }
-    85% { opacity:0.6; }
-    100% { opacity:0.7; }
+    0% {
+        opacity: 0.4;
+    }
+
+    49% {
+        opacity: 0.45;
+    }
+
+    66% {
+        opacity: 0.5;
+    }
+
+    85% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
 }
 
 .navbar i,
@@ -88,7 +105,7 @@ a:hover {
 
 }
 
- 
+
 #container-available {
     position: relative;
     padding-left: 30px;
@@ -113,13 +130,24 @@ a:hover {
     top: 0;
     left: 0;
     -webkit-animation: pulsate 1s ease-out;
-    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-iteration-count: infinite;
     opacity: 0.0
 }
+
 @-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+    0% {
+        -webkit-transform: scale(0.1, 0.1);
+        opacity: 0.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0.0;
+    }
 }
 
 
@@ -164,7 +192,7 @@ a:hover {
 }
 
 .section-who .intro-down-p {
-    position: absolute;
+    z-index: 10;
     font-size: 0.9em;
     font-weight: 500;
     padding: 25px;
@@ -172,10 +200,8 @@ a:hover {
     opacity: 0.9;
     text-align: left;
     position: relative;
-    top: -40px;
-    right: -25px;
-    -webkit-box-shadow: inset 0px 0px 5px -1px rgb(105, 105, 105);
-    box-shadow: inset 0px 0px 5px -1px lightgray;
+    -webkit-box-shadow: 0px 8px 14px -3px #E5E5E5;
+    box-shadow: 0px 8px 14px -3px #E5E5E5;
 }
 
 /* QUOTATION MARK*/
@@ -191,6 +217,8 @@ a:hover {
     transition: .5s ease;
     backface-visibility: hidden;
     font-weight: 500;
+    box-shadow: -4px 0 3px rgb(177, 177, 177);
+
 }
 
 #quotation-title {
@@ -271,8 +299,6 @@ SECTION WHAT I DO  */
 }
 
 #section-what {
-    /* -webkit-box-shadow: inset 0px 3px 9px -1px lightgray; 
-    box-shadow: inset 0px 3px 9px -1px lightgray; */
     -webkit-box-shadow: inset 0px 3px 2px -2px #D3D3D3;
     box-shadow: inset 0px 3px 2px -2px #D3D3D3;
     padding: 30px;
@@ -439,6 +465,7 @@ h2 {
 
 #Portfolio {
     background-color: #2a2a2a;
+    padding-bottom: 40px;
 }
 
 #Portfolio h1 {
@@ -452,15 +479,28 @@ h2 {
 .container-project {
     height: auto;
     max-width: 100%;
-    margin: 17px;
-    padding: 10px;
+    -webkit-box-shadow: -3px 5px 0px -2px #181818;
+    box-shadow: -3px 5px 0px -2px #131313;
+    padding: 1px;
+    margin: 15px;
 }
+
+.container-project img {
+    transition: transform .5s ease;
+}
+
+.container-project:hover img {
+    transform: scale(1.1);
+}
+
+
 
 /* font-family: 'Nerko One', cursive; */
 
 /* FOOTER  */
 
 #section-footer {
+    position: relative;
     background-color: #d8d8d8;
     height: 200px;
 }
@@ -470,9 +510,7 @@ h2 {
 }
 
 @media (max-width: 575.98px) {
-    #section-footer i {
-        margin: 10px;
-    }
+ 
 
     .section-who .intro-down-p {
         position: absolute;

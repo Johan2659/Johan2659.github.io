@@ -4332,7 +4332,7 @@ $(document).ready(function () {
 var typed = new _typed.default('.animate-title', (_Typed = {
   strings: ["", "A CURIOUS DEVELOPER", "A COOL DEVELOPER", "YOUR NEXT DEVELOPER"],
   typeSpeed: 100
-}, _defineProperty(_Typed, "typeSpeed", 100), _defineProperty(_Typed, "typeSpeed", 100), _defineProperty(_Typed, "loop", false), _Typed));
+}, _defineProperty(_Typed, "typeSpeed", 100), _defineProperty(_Typed, "typeSpeed", 100), _defineProperty(_Typed, "loop", false), _Typed)); // COLLAPSE
 },{"locomotive-scroll":"node_modules/locomotive-scroll/dist/locomotive-scroll.esm.js","typed.js":"node_modules/typed.js/lib/typed.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
