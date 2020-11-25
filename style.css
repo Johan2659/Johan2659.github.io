@@ -2,15 +2,23 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
     color: #646C79;
     font-family: 'Open Sans', sans-serif;
+    overflow: visible;
 }
+
+/* @media (min-height: 300px) {
+    nav ul {
+      position: sticky;
+      top: 0;
+    }
+  } */
 
 p {
     font-size: 16pt;
@@ -19,39 +27,102 @@ p {
 
 /* MAIN SECTION  */
 
-#main-background {
+#Home {
     height: 100vh;
     background-image: url(img/Lux-city.jpg);
     background-size: cover;
     background-position: top;
 }
 
-#main-background .main-title h1 {
+#Home .main-title h1 {
     color: black;
     background-color: white;
     opacity: 0.28;
     font-size: 3.8em;
 }
 
-#main-background .main-title h2 {
+#Home .main-title h2 {
     color: white;
     background-color: black;
     opacity: 0.7;
     text-align: center;
 }
 
-#main-background .navbloc {
-    color: white;
-}
-
-.navbloc {
+.navbar {
     position: absolute;
+    background: transparent;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    opacity: 0.4;
+
 }
 
-.nav-link {
-    color: rgb(68, 68, 68) !important;
+.navbar:hover{
+    -webkit-animation: 1s ease 0s normal forwards 1 fadein;
+    animation: 1s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+
+    0% { opacity:0.4; }
+    49% { opacity:0.45; }
+    66% { opacity:0.5; }
+    85% { opacity:0.6; }
+    100% { opacity:0.7; }
+}
+
+.navbar i,
+a {
+    color: black !important;
     font-weight: 600;
 }
+
+.navbar i:hover,
+a:hover {
+    color: #282f40 !important;
+}
+
+#available {
+    color: #8cff2d !important;
+    font-weight: bolder !important;
+
+}
+
+ 
+#container-available {
+    position: relative;
+    padding-left: 30px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: #62bd19;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.ringring {
+    border: 3px solid #62bd19;
+    -webkit-border-radius: 30px;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.0
+}
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
 
 
 
@@ -367,15 +438,15 @@ h2 {
 
 /* PROJECTS  */
 
-#projects {
-    background-color: #2a2a2a;  
+#Portfolio {
+    background-color: #2a2a2a;
 }
 
-#projects h1 {
+#Portfolio h1 {
     color: white;
 }
 
-#projects h2 {
+#Portfolio h2 {
     color: white;
 }
 
@@ -403,6 +474,7 @@ h2 {
     #section-footer i {
         margin: 10px;
     }
+
     .section-who .intro-down-p {
         position: absolute;
         font-size: 0.9em;
@@ -419,7 +491,7 @@ h2 {
         box-shadow: inset 0px 0px 5px -1px lightgray;
     }
 
-  
+
 
 }
 
