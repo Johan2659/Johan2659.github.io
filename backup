@@ -1,0 +1,48 @@
+<div class="col-md-3 post-it container-sm">
+                        <div id="post-it_pin"><i class="fas fa-thumbtack fa-2x"></i></div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 text-center">
+                                <p>HTML5</p>
+                                <p>JAVASCRIPT</p>
+                                <p>BootStrap</p>
+                                <p>WIREFRAMES</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 text-center">
+                                <p>CSS3</p>
+                                <p>JQUERY</p>
+                                <p>RESPONSIVE WEB DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 post-it2 container-sm">
+                        <div id="post-it_pin2"><i class="fas fa-thumbtack fa-2x"></i></div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 text-center">
+                                <p>REACT</p>
+                                <p>HOOKS</p>
+                                <p>TYPESCRIPT</p>
+                                <p>SHAREPOINT 2013</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 text-center">
+                                <p>REDUX</p>
+                                <p>AJAX</p>
+                                <p>LESS / SASS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 post-it3 container-sm">
+                        <div id="post-it_pin3"><i class="fas fa-thumbtack fa-2x"></i></div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 text-center">
+                                <p>PHP</p>
+                                <p>NODEJS</p>
+                                <p>EXPRESS</p>
+                                <p>MYSQL</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 text-center">
+                                <p>API</p>
+                                <p>POO</p>
+                                <p>MVC</p>
+                            </div>
+                        </div>
+                    </div>
