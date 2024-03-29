@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Johan2659/Portfolio#readme",
   "devDependencies": {
+    "parcel": "^2.12.0",
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
