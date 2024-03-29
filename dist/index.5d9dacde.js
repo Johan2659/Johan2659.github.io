@@ -587,6 +587,11 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _typedJs = require("typed.js");
 var _typedJsDefault = parcelHelpers.interopDefault(_typedJs);
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
 // TOOLTIP BOOTSTRAP
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
@@ -611,6 +616,14 @@ var typed = new (0, _typedJsDefault.default)(".animate-title", {
     typeSpeed: 100,
     typeSpeed: 100,
     loop: false
+});
+document.addEventListener("DOMContentLoaded", function() {
+    // Ensures this code runs after the DOM is fully loaded
+    var myBtn = document.getElementById("myBtn");
+    myBtn.addEventListener("click", function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    });
 });
 
 },{"typed.js":"6M0L2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6M0L2":[function(require,module,exports) {

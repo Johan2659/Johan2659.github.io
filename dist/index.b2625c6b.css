@@ -444,4 +444,27 @@ h2 {
     padding: 0;
   }
 }
+
+#myBtn {
+  z-index: 99;
+  color: #fff;
+  cursor: pointer;
+  background-color: #646c79;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 15px;
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 /*# sourceMappingURL=index.b2625c6b.css.map */
